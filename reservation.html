@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation | Hôtel Merveille</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<style>
+    .btnn {
+    background: #f0c14b;
+    color: #333;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+   .btnn:hover {
+    background: #d8a738;
+  }
+</style>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Hôtel Merveille</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <!--<li><a href="presentation.html">Présentation</a></li>
+            <li><a href="reservation.html" class="active">Réservation</a></li>
+            <li><a href="offres.html">Offres</a></li>
+            <li><a href="decouvrir.html">Découvrir</a></li>
+             <li><a href="contact.php">Contact</a></li> -->
+        </ul>
+    </nav>
+</header>
+
+<section class="reservation-form">
+    <h2>Réservez votre séjour</h2>
+
+    <?php if ($message != ""): ?>
+        <p style="color: green; text-align:center;"><?php echo $message; ?></p>
+    <?php endif; ?>
+
+    <form method="POST" action="confirmation.html">
+        <label>Nom complet</label>
+        <input type="text" name="nom" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Téléphone</label>
+        <input type="text" name="telephone" required>
+
+        <label>Date d’arrivée</label>
+        <input type="date" name="arrivee" required>
+
+        <label>Date de départ</label>
+        <input type="date" name="depart" required>
+
+        <label>Type de chambre</label>
+        <select name="chambre" required>
+            <option value="">-- Choisir --</option>
+            <option value="standard">Standard</option>
+            <option value="deluxe">Deluxe</option>
+            <option value="suite">Suite</option>
+        </select>
+
+        <label>Commentaire</label>
+        <textarea name="comment" rows="4"></textarea>
+
+        <button type="submit" class="btnn">Confirmer la réservation</button>
+    </form>
+</section>
+
+<footer>
+    <a class='btn' href="presenteToiSimon.html">A PROPOS DE MOI</a>
+    <p>&copy; <?php echo date("Y"); ?> Hôtel Merveille - Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>

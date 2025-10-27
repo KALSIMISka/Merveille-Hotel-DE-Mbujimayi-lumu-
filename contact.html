@@ -1,0 +1,63 @@
+<?php
+$message = '';
+if($_SERVER["REQUEST_METHOD"]=="POST") {
+    $nom = htmlspecialchars($_POST['nom']);
+    $email = htmlspecialchars($_POST['email']);
+    $telephone = htmlspecialchars($_POST['telephone']);
+    $msg = htmlspecialchars($_POST['message']);
+    // Ici, tu peux envoyer un email ou enregistrer dans la DB
+    $message = "Merci $nom, votre message a été envoyé !";
+}
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Hôtel Merveille</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Hôtel Merveille</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a class='btn' href="presenteToiSimon.html">Qui suis-je?</a></li>
+            <!--<li><a href="presentation.html">Présentation</a></li>
+            <li><a href="reservation.html">Réservation</a></li>
+            <li><a href="offres.html">Offres</a></li>
+            <li><a href="decouvrir.html">Découvrir</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>-->
+        </ul>
+    </nav>
+</header>
+
+<section class="contact">
+    <h2>Contactez-nous</h2>
+    <?php if($message) echo "<p style='color:green;'>$message</p>"; ?>
+    <form method="POST">
+        <label>Nom</label>
+        <input type="text" name="nom" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Téléphone</label>
+        <input type="text" name="telephone">
+
+        <label>Message</label>
+        <textarea name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Envoyer</button>
+    </form>
+    <p>Adresse : Mbujimayi, RDC | Téléphone : +243 842079074 | WhatsApp : +243 892423571</p>
+</section>
+
+<footer>
+    <a class='btn' href="presenteToiSimon.html">A PROPOS DE MOI</a>
+    <p>&copy; <?php echo date("Y"); ?> Hôtel Merveille - Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>

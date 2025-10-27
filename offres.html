@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Offres | Hôtel Merveille</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>/* CTA */
+.cta {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #7a6c196c;
+    color: white;
+}
+
+.cta a {
+    color: white;
+    text-decoration: none;
+    background-color: #2e504b;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+    background-color:#003f7f;
+    opacity:0.5;
+}</style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Hôtel Merveille</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <!--<li><a href="presentation.html">Présentation</a></li>
+            <li><a href="reservation.html">Réservation</a></li>
+            <li><a href="offres.html" class="active">Offres</a></li>
+            <li><a href="decouvrir.html">Découvrir</a></li>
+           <li><a href="contact.php">Contact</a></li> -->
+        </ul>
+    </nav>
+</header>
+
+<section class="offers">
+    <h2>Offres spéciales</h2>
+    <ul>
+        <li>✨ -10% pour les séjours de 3 nuits et plus</li>
+        <li>💍 Réduction pour mariages et séminaires</li>
+        <li>🎉 Promotions saisonnières et événements locaux</li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; <?php echo date("Y"); ?> Hôtel Merveille - Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
+
+<?php
+// offres.php – Promotions et offres spéciales de l'hôtel
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offres - Hôtel Merveille</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Hôtel Merveille</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a class='btn' href="presenteToiSimon.html">Qui suis-je ?</a></li>
+                <!--<li><a href="presentation.html">Présentation</a></li>
+                <li><a href="offres.html" class="active">Offres</a></li>
+                <li><a href="decouvrir.html">Découvrir</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reservation.html" class="btn">Réserver</a></li>-->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header" style="background-image: url('assets/images/hotel.jpg');">
+        <div class="overlay">
+            <h1>Nos Offres Spéciales</h1>
+            <p>Profitez des meilleures promotions pour votre séjour à Mbujimayi</p>
+        </div>
+    </section>
+
+    <section class="special-offers">
+        <div class="container">
+            <h2>Offres en cours</h2>
+            <div class="offers-grid">
+                <div class="offer-item">
+                    <img src="assets/images/chambre1.jpg" alt="Offre Chambre Standard">
+                    <h3>Réduction 10% sur la Chambre Standard</h3>
+                    <p>Valable pour tout séjour de 3 nuits minimum en semaine.</p>
+                </div>
+                <div class="offer-item">
+                    <img src="assets/images/chambre2.jpg" alt="Offre Chambre Deluxe">
+                    <h3>Offre Week-end Deluxe</h3>
+                    <p>Deux nuits consécutives en Chambre Deluxe avec petit-déjeuner offert.</p>
+                </div>
+                <div class="offer-item">
+                    <img src="assets/images/chambre3.jpg" alt="Offre Suite Présidentielle">
+                    <h3>Suite Présidentielle VIP</h3>
+                    <p>Profitez d’un dîner gratuit et d’une remise exceptionnelle pour votre séjour de 2 nuits.</p>
+                </div>
+                <div class="offer-item">
+                    <img src="assets/images/jardin.jpg" alt="Offre Jardin">
+                    <h3>Événements et séminaires</h3>
+                    <p>Réduction spéciale pour les groupes et séminaires réservés à l’avance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Réservez dès maintenant et bénéficiez de nos offres</h2>
+            <a href="reservation.php" class="btn-primary">Réserver</a>
+        </div>
+    </section>
+
+    <footer>
+        <a class='btn' href="presenteToiSimon.html">A PROPOS DE MOI</a>
+        <div class="footer-container">
+            <p>&copy; <?php echo date('Y'); ?> Hôtel Merveille - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- <html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Présentation | Hôtel Merveille</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">Hôtel Merveille</div>
+        <ul class="nav-links">
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="presentation.php" class="active">Présentation</a></li>
+            <li><a href="reservation.php">Réservation</a></li>
+            <li><a href="offres.php">Offres</a></li>
+            <li><a href="decouvrir.php">Découvrir</a></li>
+            !-- <li><a href="contact.php">Contact</a></li> -->
+            <!--
+        </ul>
+    </nav>
+</header>
+
+<section class="about">
+    <h2>Notre établissement</h2>
+    <p>L’Hôtel Merveille vous accueille avec confort et hospitalité au cœur du Kasaï. Notre mission est de vous offrir un séjour inoubliable alliant modernité, tradition et service de qualité.</p>
+    <h3>Ambiance & Services</h3>
+    <ul>
+        <li>Wi-Fi gratuit</li>
+        <li>Climatisation</li>
+        <li>Sécurité 24h/24</li>
+        <li>Navette aéroport</li>
+        <li>Restaurant et bar</li>
+        <li>Jardin et espace détente</li>
+    </ul>
+    <h3>Nos chambres</h3>
+    <p>Chambres Standard, Deluxe et Suites spacieuses avec toutes les commodités modernes.</p>
+</section>
+
+
+
+<footer>
+    <p>&copy; <?php echo date("Y"); ?> Hôtel Merveille - Tous droits réservés.</p>
+</footer>
+
+</body>
+</html> -->
+
+
+<?php
+// presentation.php – Présentation complète de l'hôtel
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation - Hôtel Merveille</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>/* CTA */
+.cta {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #7a6c196c;
+    color: white;
+}
+
+.cta a {
+    color: white;
+    text-decoration: none;
+    background-color: #2e504b;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+    background-color:#003f7f;
+    opacity:0.5;
+}
+.cou{
+    color: white;
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.php">Hôtel Merveille</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html" class="active">Présentation</a></li>
+                <li><a href="offres.html">Offres</a></li>
+                <li><a href="decouvrir.html">Découvrir</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reservation.html" class="btn">Réserver</a></li>
+                <li><a class='btn' href="presenteToiSimon.html">Qui suis-je?</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header" style="background-image: url('assets/images/hotel.jpg');">
+        <div class="overlay">
+            <h1>Présentation de l’Hôtel Merveille</h1>
+            <p class='cou'>Confort, élégance et hospitalité congolaise</p>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>À propos de notre établissement</h2>
+            <p>
+                L’Hôtel Merveille  est un lieu emblématique situé au cœur du Kasaï Oriental. 
+                Fondé avec une vision d’excellence et d’hospitalité, notre hôtel accueille chaque visiteur 
+                dans une atmosphère chaleureuse et raffinée.
+            </p>
+            <p>
+                Nous offrons une expérience unique alliant confort moderne, gastronomie locale et service personnalisé. 
+                Que vous soyez en voyage d’affaires, en famille ou en lune de miel, notre équipe veille à rendre votre séjour inoubliable.
+            </p>
+            <img src="assets/images/jardin.jpg" alt="Jardin de l'hôtel" class="about-img">
+        </div>
+    </section>
+
+    <section class="rooms">
+        <div class="container">
+            <h2>Nos chambres & suites</h2>
+            <div class="room-grid">
+                <div class="room">
+                    <img src="assets/images/chambre1.jpg" alt="Chambre standard">
+                    <h3>Chambre Standard</h3>
+                    <p>Idéale pour les séjours courts, équipée de Wi-Fi, TV, climatisation et douche moderne.</p>
+                    <span class="price">À partir de 100$/ nuit</span>
+                </div>
+                <div class="room">
+                    <img src="assets/images/chambre2.jpg" alt="Chambre deluxe">
+                    <h3>Chambre Deluxe</h3>
+                    <p>Un espace confortable avec balcon, mini-bar, et vue sur le jardin.</p>
+                    <span class="price">À partir de 130 $ / nuit</span>
+                </div>
+                <div class="room">
+                    <img src="assets/images/chambre3.jpg" alt="Suite présidentielle">
+                    <h3>Suite Présidentielle</h3>
+                    <p>Notre joyau : vaste salon, baignoire, service VIP, et décoration élégante.</p>
+                    <span class="price">À partir de 180 $/ nuit</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <h2>Réservez dès aujourd’hui et vivez l’expérience à Mbujimayi avec l'hotel Merveille</h2>
+            <a href="reservation.php" class="btn-primary">Réserver maintenant</a>
+        </div>
+    </section>
+
+    <footer>
+        <a class='btn' href="presenteToiSimon.html">A PROPOS DE MOI</a>
+        <div class="footer-container">
+            <p>&copy; <?php echo date('Y'); ?> Hôtel de Merveille - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>
